@@ -1,0 +1,21 @@
+{
+  "name": "kunkrai-server",
+  "version": "1.0.0",
+  "description": "Backend server for the kunkrai website",
+  "main": "server/app.js",
+  "author": "phontok",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "client": "cd client && yarn run start",
+    "server": "node server/app.js",
+    "start": "concurrently \"yarn run server\" \"yarn run client\"",
+    "build": "cd client && yarn run build"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
