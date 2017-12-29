@@ -1,0 +1,28 @@
+version: '2'
+services:
+  app:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    depends_on:
+      - db
+    environment:
+      - POSTGRES_HOST=db
+      - POSTGRES_DATABASE=kankrai
+      - POSTGRES_USERNAME=kankrai
+      - POSTGRES_PASSWORD=kankrai
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./:/var/www/kankrai:cached
+  db:
+    image: postgres:9.6
+    volumes:
+      - ./db/dev-postgres:/var/lib/postgresql/data/kankrai-data:cached
+    environment:
+      - POSTGRES_USER=kankrai
+      - POSTGRES_PASSWORD=kankrai
+      - POSTGRES_DB=kankrai
+      - PGDATA=/var/lib/postgresql/data/kankrai-data
+    ports:
+      - "5432:5432"
