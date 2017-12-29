@@ -1,0 +1,16 @@
+{
+  "name": "kunkrai-client",
+  "version": "1.0.0",
+  "description": "Frontend client for the kunkrai website",
+  "main": "index.js",
+  "author": "phontok",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "poi": "^9.6.8"
+  },
+  "scripts": {
+    "start": "poi",
+    "build": "poi build"
+  }
+}
