@@ -11,5 +11,13 @@
   },
   "proxy": {
     "command": "npm run server"
+  },
+  "stages": {
+    "development": {
+      "domain": "dev.kankrai.com"
+    },
+    "production": {
+      "domain": "kankrai.com"
+    }
   }
 }
