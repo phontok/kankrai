@@ -1,7 +1,7 @@
 {
-  "name": "kunkrai-client",
+  "name": "kankrai-client",
   "version": "1.0.0",
-  "description": "Frontend client for the kunkrai website",
+  "description": "Frontend client for the kankrai website",
   "main": "index.js",
   "author": "phontok",
   "license": "MIT",

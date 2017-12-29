@@ -1,7 +1,7 @@
 {
-  "name": "kunkrai-server",
+  "name": "kankrai-server",
   "version": "1.0.0",
-  "description": "Backend server for the kunkrai website",
+  "description": "Backend server for the kankrai website",
   "main": "server/app.js",
   "author": "phontok",
   "license": "MIT",
