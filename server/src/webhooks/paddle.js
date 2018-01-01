@@ -10,7 +10,8 @@ module.exports = (req, res) => {
     return;
   }
 
-  paddle.handlePayload(params);
-
-  res.send({ result: 'ok' });
+  paddle
+    .handlePayload(params)
+    .then(() => res.status(200).send({ result: 'ok' }))
+    .catch(error => res.status(400).send(error));
 };

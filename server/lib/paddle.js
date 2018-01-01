@@ -1,5 +1,6 @@
 const Serialize = require('php-serialize');
 const crypto = require('crypto');
+const { Order } = require('../models');
 
 module.exports = {
   verifySignature: (params, publicKey) => {
@@ -22,6 +23,29 @@ module.exports = {
   },
 
   handlePayload: (payload) => {
-    console.log(payload);
+    console.log(payload); // eslint-disable-line no-console
+    if (!('alert_name' in payload)) {
+      return Promise.reject(new Error('Invalid payload'));
+    }
+    switch (payload.alert_name) {
+      case 'payment_succeeded':
+        return Order
+          .create({
+            external_id: payload.order_id,
+            currency: payload.currency,
+            earnings: payload.earnings,
+            fee: payload.fee,
+            sale_gross: payload.sale_gross,
+            tax: payload.payment_tax,
+            product_id: payload.product_id,
+            email: payload.email,
+            payload,
+          });
+      case 'order_fulfilment':
+        return Promise.reject(new Error('Currently unhandled.'));
+      default:
+        /* This is a message we don't support yet */
+        return Promise.reject(new Error('Unhandled alert type.'));
+    }
   },
 };

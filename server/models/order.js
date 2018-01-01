@@ -1,31 +1,29 @@
-module.exports = (Sequelize/* , DataTypes */) => {
-  const Order = Sequelize.define('Order', {
-    external_id: {
-      type: Sequelize.INTEGER,
-    },
+module.exports = (sequelize, DataTypes) => {
+  const Order = sequelize.define('Order', {
+    external_id: DataTypes.INTEGER,
     currency: {
-      type: Sequelize.STRING,
+      type: DataTypes.STRING,
     },
     earnings: {
-      type: Sequelize.DECIMAL,
+      type: DataTypes.DECIMAL,
     },
     fee: {
-      type: Sequelize.DECIMAL,
+      type: DataTypes.DECIMAL,
     },
     sale_gross: {
-      type: Sequelize.DECIMAL,
+      type: DataTypes.DECIMAL,
     },
     tax: {
-      type: Sequelize.DECIMAL,
+      type: DataTypes.DECIMAL,
     },
     product_id: {
-      type: Sequelize.INTEGER,
+      type: DataTypes.INTEGER,
     },
     email: {
-      type: Sequelize.STRING,
+      type: DataTypes.STRING,
     },
     payload: {
-      type: Sequelize.JSONB,
+      type: DataTypes.JSONB,
     },
   });
   return Order;
