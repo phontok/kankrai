@@ -1,4 +1,4 @@
-FROM node:6-slim
+FROM node:8.9.3-slim
 
 COPY . /var/www/kankrai
 WORKDIR /var/www/kankrai

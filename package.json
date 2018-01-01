@@ -6,11 +6,15 @@
   "author": "phontok",
   "license": "MIT",
   "private": true,
+  "engines": {
+    "node": "8.9.3"
+  },
   "scripts": {
     "client": "cd client && yarn run start",
     "server": "nodemon ./server/app.js",
     "start": "concurrently \"yarn run server\" \"yarn run client\"",
-    "build": "cd client && yarn run build"
+    "build": "cd client && yarn run build",
+    "postinstall": "yarn run build"
   },
   "devDependencies": {
     "concurrently": "^3.5.1",
@@ -25,5 +29,9 @@
     "pg-hstore": "^2.3.2",
     "php-serialize": "^1.2.5",
     "sequelize": "^4.28.6"
-  }
+  },
+  "cacheDirectories": [
+    "node_modules",
+    "client/node_modules"
+  ]
 }
