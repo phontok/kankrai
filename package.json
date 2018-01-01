@@ -28,11 +28,15 @@
     "body-parser": "^1.18.2",
     "crypto": "^1.0.1",
     "express": "^4.16.2",
+    "pdfkit": "^0.8.3",
     "pg": "^7.4.0",
     "pg-hstore": "^2.3.2",
     "php-serialize": "^1.2.5",
     "sequelize": "^4.28.6",
-    "sequelize-cli": "^3.2.0"
+    "sequelize-cli": "^3.2.0",
+    "svg-to-pdfkit": "^0.1.5",
+    "svg.js": "^2.6.3",
+    "svgdom": "^0.0.15"
   },
   "cacheDirectories": [
     "node_modules",
