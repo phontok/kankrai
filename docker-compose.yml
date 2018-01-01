@@ -11,6 +11,8 @@ services:
       - POSTGRES_DATABASE=kankrai
       - POSTGRES_USERNAME=kankrai
       - POSTGRES_PASSWORD=kankrai
+    env_file:
+      - .env
     ports:
       - "3001:3001"
     volumes:
