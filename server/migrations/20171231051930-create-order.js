@@ -1,51 +1,47 @@
-'use strict';
 module.exports = {
-  up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('Orders', {
+  up: (queryInterface, Sequelize) =>
+    queryInterface.createTable('Orders', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
       },
       external_id: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
       },
       currency: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
       },
       earnings: {
-        type: Sequelize.DECIMAL
+        type: Sequelize.DECIMAL,
       },
       fee: {
-        type: Sequelize.DECIMAL
+        type: Sequelize.DECIMAL,
       },
       sale_gross: {
-        type: Sequelize.DECIMAL
+        type: Sequelize.DECIMAL,
       },
       tax: {
-        type: Sequelize.DECIMAL
+        type: Sequelize.DECIMAL,
       },
       product_id: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
       },
       email: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
       },
       payload: {
-        type: Sequelize.JSONB
+        type: Sequelize.JSONB,
       },
       createdAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
       },
       updatedAt: {
         allowNull: false,
-        type: Sequelize.DATE
-      }
-    });
-  },
-  down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('Orders');
-  }
+        type: Sequelize.DATE,
+      },
+    }),
+  down: queryInterface => queryInterface.dropTable('Orders'),
 };

@@ -1,33 +1,32 @@
-'use strict';
-module.exports = (sequelize, DataTypes) => {
-  const Order = sequelize.define('Order', {
+module.exports = (Sequelize/* , DataTypes */) => {
+  const Order = Sequelize.define('Order', {
     external_id: {
-      type: Sequelize.INTEGER
+      type: Sequelize.INTEGER,
     },
     currency: {
-      type: Sequelize.STRING
+      type: Sequelize.STRING,
     },
     earnings: {
-      type: Sequelize.DECIMAL
+      type: Sequelize.DECIMAL,
     },
     fee: {
-      type: Sequelize.DECIMAL
+      type: Sequelize.DECIMAL,
     },
     sale_gross: {
-      type: Sequelize.DECIMAL
+      type: Sequelize.DECIMAL,
     },
     tax: {
-      type: Sequelize.DECIMAL
+      type: Sequelize.DECIMAL,
     },
     product_id: {
-      type: Sequelize.INTEGER
+      type: Sequelize.INTEGER,
     },
     email: {
-      type: Sequelize.STRING
+      type: Sequelize.STRING,
     },
     payload: {
-      type: Sequelize.JSONB
-    }
+      type: Sequelize.JSONB,
+    },
   });
   return Order;
 };

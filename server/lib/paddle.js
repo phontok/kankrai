@@ -3,13 +3,16 @@ const crypto = require('crypto');
 
 module.exports = {
   verifySignature: (params, publicKey) => {
-    const signature = params.p_signature;
-    delete params.p_signature;
-    const serialize = Serialize.serialize(
-      Object.keys(params)
-            .sort()
-            .reduce((r, k) => (r[k] = params[k], r), {})
-    );
+    const p = params;
+    const signature = p.p_signature;
+    delete p.p_signature;
+    const serialize = Serialize.serialize(Object.keys(p)
+      .sort()
+      .reduce((r, k) => {
+        const ret = r;
+        ret[k] = params[k];
+        return ret;
+      }, {}));
 
     const verify = crypto.createVerify('RSA-SHA1');
     verify.write(serialize);
@@ -19,5 +22,6 @@ module.exports = {
   },
 
   handlePayload: (payload) => {
-  }
+    console.log(payload);
+  },
 };
