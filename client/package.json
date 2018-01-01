@@ -6,7 +6,7 @@
   "author": "phontok",
   "license": "MIT",
   "private": true,
-  "devDependencies": {
+  "dependencies": {
     "poi": "^9.6.8"
   },
   "scripts": {
