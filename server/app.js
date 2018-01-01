@@ -13,7 +13,7 @@ app.use(bodyParser.json())
 
 app.use(express.static("client/dist"));
 
-app.get('/webhooks', webhooks);
+app.use('/webhooks', webhooks);
 
 app.listen(app.get('port'), () => {
   console.log(`Find the server at: http://localhost:${app.get('port')}/`); // eslint-disable-line no-console
