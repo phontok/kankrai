@@ -5,15 +5,18 @@ const SVGtoPDF = require('svg-to-pdfkit');
 
 const { document } = window;
 
-// create svg.js instance
-const draw = SVG(document.documentElement);
-
 const generateSVG = (cardText) => {
+  // create svg.js instance
+  const svg = document.createElement('svg');
+  const draw = SVG(svg);
+
   // use svg.js as normal
-  draw.rect(100, 100).fill('green').move(50, 50);
+  draw.rect(100, 100).fill('red').move(50, 50);
 
   // get your svg as string
-  return draw.svg();
+  const svgString = draw.svg();
+  document.removeChild(svg);
+  return svgString;
 };
 
 const generatePDF = (pdfDoc, cardText) => {
