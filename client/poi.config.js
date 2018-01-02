@@ -1,9 +1,9 @@
 module.exports = (options, req) => ({
-  entry: './index.js',
+  entry: './src/index.js',
   port: 3001,
   devServer: {
     proxy: {
-      '/webhooks': 'http://localhost:3000'
-    }
-  }
+      '/webhooks': 'http://localhost:3000',
+    },
+  },
 });

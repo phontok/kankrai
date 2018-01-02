@@ -7,7 +7,12 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "poi": "^9.6.8"
+    "node-sass": "^4.7.2",
+    "poi": "^9.6.8",
+    "sass-loader": "^6.0.6",
+    "vue": "^2.5.13",
+    "vue-meta": "^1.4.0",
+    "vue-router": "^3.0.1"
   },
   "scripts": {
     "start": "poi",
