@@ -5,7 +5,8 @@ const PDFDocument = require('pdfkit');
 
 router.post('/paddle', paddleHandler);
 router.get('/card/:format', (req, res) => {
-  const { cardText, format } = req.params;
+  const { format } = req.params;
+  const { cardText } = req.query;
   if (format === 'pdf') {
     const pdf = new PDFDocument();
     res.setHeader('Content-disposition', 'inline');
