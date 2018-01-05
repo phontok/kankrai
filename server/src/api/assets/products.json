@@ -1,0 +1,84 @@
+[
+  {
+    "name": "Popup Airplane Card",
+    "price": 4.99,
+    "currency": "USD",
+    "slug": "popup-airplane-card",
+    "description": "Templates for Handmade airplane 3D pop up card, designed by myself.\nThis set includes\n- Instruction\n- PDF templates for printing both sides of paper\n- SVG templates for cutting machine\n\nSize when folded is A6 (proximately 105 x 148mm/4.1 x 5.8inch).",
+    "sku": "cair",
+    "paddle_id": 1,
+    "thumbnail": "https://assets.cdn.kankrai.com/assets/products/cair/cair_thumb.jpg",
+    "photos": [
+      "https://assets.cdn.kankrai.com/assets/products/cair/cair_thumb.jpg",
+      "https://assets.cdn.kankrai.com/assets/products/cair/cair_01.jpg",
+      "https://assets.cdn.kankrai.com/assets/products/cair/cair_02.jpg",
+      "https://assets.cdn.kankrai.com/assets/products/cair/cair_03.jpg",
+      "https://assets.cdn.kankrai.com/assets/products/cair/cair_04.jpg"
+    ]
+  },
+  {
+    "name": "Popup Sewing Machine Card",
+    "price": 4.99,
+    "currency": "USD",
+    "slug": "popup-sewing-maching-card",
+    "description": "",
+    "sku": "csew",
+    "paddle_id": 2,
+    "thumbnail": "",
+    "photos": [
+      ""
+    ]
+  },
+  {
+    "name": "Popup Bicycle Card",
+    "price": 4.99,
+    "currency": "USD",
+    "slug": "popup-bicycle-card",
+    "description": "",
+    "sku": "cbike",
+    "paddle_id": 3,
+    "thumbnail": "",
+    "photos": [
+      ""
+    ]
+  },
+  {
+    "name": "Popup Helicopter Card",
+    "price": 4.99,
+    "currency": "USD",
+    "slug": "popup-helicopter-card",
+    "description": "",
+    "sku": "cheli",
+    "paddle_id": 4,
+    "thumbnail": "",
+    "photos": [
+      ""
+    ]
+  },
+  {
+    "name": "Popup Elephant Card",
+    "price": 4.99,
+    "currency": "USD",
+    "slug": "popup-elephant-card",
+    "description": "",
+    "sku": "cchang",
+    "paddle_id": 0,
+    "thumbnail": "",
+    "photos": [
+      ""
+    ]
+  },
+  {
+    "name": "Popup Cesna Card",
+    "price": 4.99,
+    "currency": "USD",
+    "slug": "popup-cesna-card",
+    "description": "",
+    "sku": "cces",
+    "paddle_id": 0,
+    "thumbnail": "",
+    "photos": [
+      ""
+    ]
+  }
+]

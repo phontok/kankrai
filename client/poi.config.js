@@ -4,6 +4,7 @@ module.exports = (options, req) => ({
   devServer: {
     proxy: {
       '/webhooks': 'http://localhost:3000',
+      '/api': 'http://localhost:3000',
     },
   },
 });
