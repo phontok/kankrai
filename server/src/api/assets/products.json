@@ -24,9 +24,13 @@
     "description": "",
     "sku": "csew",
     "paddle_id": 2,
-    "thumbnail": "",
+    "thumbnail": "https://assets.cdn.kankrai.com/assets/products/csew/csew_thumb.jpg",
     "photos": [
-      ""
+      "https://assets.cdn.kankrai.com/assets/products/csew/csew_thumb.jpg",
+      "https://assets.cdn.kankrai.com/assets/products/csew/csew_01.jpg",
+      "https://assets.cdn.kankrai.com/assets/products/csew/csew_02.jpg",
+      "https://assets.cdn.kankrai.com/assets/products/csew/csew_03.jpg",
+      "https://assets.cdn.kankrai.com/assets/products/csew/csew_04.jpg"
     ]
   },
   {
@@ -37,9 +41,12 @@
     "description": "",
     "sku": "cbike",
     "paddle_id": 3,
-    "thumbnail": "",
+    "thumbnail": "https://assets.cdn.kankrai.com/assets/products/cbike/cbike_thumb.jpg",
     "photos": [
-      ""
+      "https://assets.cdn.kankrai.com/assets/products/cbike/cbike_thumb.jpg",
+      "https://assets.cdn.kankrai.com/assets/products/cbike/cbike_01.jpg",
+      "https://assets.cdn.kankrai.com/assets/products/cbike/cbike_02.jpg",
+      "https://assets.cdn.kankrai.com/assets/products/cbike/cbike_03.jpg"
     ]
   },
   {
@@ -50,9 +57,13 @@
     "description": "",
     "sku": "cheli",
     "paddle_id": 4,
-    "thumbnail": "",
+    "thumbnail": "https://assets.cdn.kankrai.com/assets/products/cheli/cheli_thumb.jpg",
     "photos": [
-      ""
+      "https://assets.cdn.kankrai.com/assets/products/cheli/cheli_thumb.jpg",
+      "https://assets.cdn.kankrai.com/assets/products/cheli/cheli_01.jpg",
+      "https://assets.cdn.kankrai.com/assets/products/cheli/cheli_02.jpg",
+      "https://assets.cdn.kankrai.com/assets/products/cheli/cheli_03.jpg",
+      "https://assets.cdn.kankrai.com/assets/products/cheli/cheli_04.jpg"
     ]
   },
   {
@@ -63,9 +74,12 @@
     "description": "",
     "sku": "cchang",
     "paddle_id": 0,
-    "thumbnail": "",
+    "thumbnail": "https://assets.cdn.kankrai.com/assets/products/cchang/cchang_thumb.jpg",
     "photos": [
-      ""
+      "https://assets.cdn.kankrai.com/assets/products/cchang/cchang_thumb.jpg",
+      "https://assets.cdn.kankrai.com/assets/products/cchang/cchang_01.jpg",
+      "https://assets.cdn.kankrai.com/assets/products/cchang/cchang_02.jpg",
+      "https://assets.cdn.kankrai.com/assets/products/cchang/cchang_03.jpg"
     ]
   },
   {
@@ -76,9 +90,13 @@
     "description": "",
     "sku": "cces",
     "paddle_id": 0,
-    "thumbnail": "",
+    "thumbnail": "https://assets.cdn.kankrai.com/assets/products/cces/cces_thumb.jpg",
     "photos": [
-      ""
+      "https://assets.cdn.kankrai.com/assets/products/cces/cces_thumb.jpg",
+      "https://assets.cdn.kankrai.com/assets/products/cces/cces_01.jpg",
+      "https://assets.cdn.kankrai.com/assets/products/cces/cces_02.jpg",
+      "https://assets.cdn.kankrai.com/assets/products/cces/cces_03.jpg",
+      "https://assets.cdn.kankrai.com/assets/products/cces/cces_04.jpg"
     ]
   }
 ]

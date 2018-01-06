@@ -1,36 +1,29 @@
 <template>
   <div>
-    <h1>Welcome to kankrai</h1>
-    <ul>
-      <li v-for="product in products" v-bind:key="product.slug">
-        <router-link :to="{ name: 'product', params: { slug: product.slug }}">
-          {{ product.name }} (${{ product.price}})
-        </router-link>
-      </li>
-    </ul>
+    <section class="hero is-primary is-bold">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Welcome to kankrai
+          </h1>
+          <h2 class="subtitle">
+            Create beautiful, handmade, pop-up cards
+          </h2>
+        </div>
+      </div>
+    </section>
+    <ProductList />
   </div>
 </template>
 
 <script>
 import Vue from 'vue';
-import axios from 'axios';
+import ProductList from './ProductList.vue';
 
 export default Vue.extend({
   name: 'Home',
-  data() {
-    return {
-      products: [],
-    };
-  },
-  created() {
-    // Kick off API request
-    axios.get('/api/products')
-      .then(response => {
-        this.products = response.data;
-      })
-      .catch(error => {
-        console.log(error);
-      })
+  components: {
+    ProductList,
   },
 });
 </script>
