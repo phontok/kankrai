@@ -1,23 +1,35 @@
 <template>
-  <div>
-    <h1>Product Page</h1>
-    <h2>{{ slug }}</h2>
-    <div v-if="product">
-      <p>{{ product.name }}</p>
-      <p>{{ product.price}}</p>
-      <p>{{ product.description }}</p>
-      <p><img :src="product.thumbnail" /></p>
-      <p v-for="photo in product.photos" v-bind:key="photo">
-        <img :src="photo" />
-      </p>
+  <section class="container">
+    <div class="tile is-ancestor">
+      <div class="tile is-vertical is-6 is-parent">
+        <div class="tile is-child content">
+          <h1>Product Page</h1>
+          <h2>{{ slug }}</h2>
+        </div>
+        <div v-if="product" class="tile is-child content">
+          <p>{{ product.name }}</p>
+          <p>{{ product.price}}</p>
+          <p>{{ product.description }}</p>
+        </div>
+        <div v-if="product" class="tile is-child box">
+          <PurchaseButton text="Buy Now" v-bind:productId="product.paddle_id" />
+        </div>
+        <div class="tile is-child">
+          <router-link :to="{ name: 'root'}">Home</router-link>
+        </div>
+      </div>
+      <div v-if="product" class="tile is-parent is-6">
+        <Carousel v-bind:items="product.photos" class="tile is-child" />
+      </div>
     </div>
-    <router-link :to="{ name: 'root'}">Home</router-link>
-  </div>
+  </section>
 </template>
 
 <script>
 import Vue from 'vue';
 import axios from 'axios';
+import Carousel from './Carousel.vue';
+import PurchaseButton from './PurchaseButton.vue';
 
 export default Vue.extend({
   name: 'ProductPage',
@@ -43,6 +55,9 @@ export default Vue.extend({
         console.log(error);
       });
   },
+  components: {
+    Carousel,
+    PurchaseButton,
+  },
 });
 </script>
-
