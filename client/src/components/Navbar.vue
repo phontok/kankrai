@@ -2,9 +2,7 @@
   <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
     <div class="container">
       <div class="navbar-brand">
-        <a class="navbar-item">
-          kankrai
-        </a>
+        <router-link :to="{ name: 'root'}" class="navbar-item">kankrai</router-link>
       </div>
     </div>
   </nav>  
